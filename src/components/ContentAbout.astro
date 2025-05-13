@@ -13,7 +13,7 @@ interface TechStack {
    frontend: string[];
 };
 
-type ContactType = 'github' | 'twitter' | 'linkedIn' | 'xing' | 'email';
+type ContactType = 'github' | 'linkedIn' | 'email';
 
 const techStack: TechStack = {
     devOps: [
@@ -76,7 +76,7 @@ const contact = (type: ContactType): string => {
         case 'linkedIn':
             return 'https://www.linkedin.com/in/josemariohernandez/';
         case 'email':
-            return 'hi@devidev.io';
+            return 'mariohrdezdeveloper@gmail.com';
         default:
             return 'Send fax.';
     }
