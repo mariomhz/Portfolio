@@ -17,52 +17,54 @@ type ContactType = 'github' | 'twitter' | 'linkedIn' | 'xing' | 'email';
 
 const techStack: TechStack = {
     devOps: [
-        'GitLab',
-        'GitHub',
-        'Cloudflare',
-        'Docker'
+        'GitHub'
     ],
     frontend: [
-        'Angular',
         'JavaScript',
         'TypeScript',
         'TailwindCSS',
-        'PrimeNG',
         'Astro',
-        'Ionic',
-        'Stencil',
-        'Capacitor',
-        'SCSS',
-        'Markdown',
-        'WordPress'
+        'React',
+        'WordPress',
+        'Shopify'
     ],
     backend: [
-        'Supabase',
         'Node.js',
-        'Bun',
-        'Deno',
-        'PostgreSQL',
         'MySQL',
-        'S3 Storage',
-        'Resend'
     ]
 };
 
 // Developer profile
 const me: Developer = {
-    name: 'Dejan Vi.',
+    name: 'Mario Hernandez',
     skills: [
         ...techStack.devOps,
         ...techStack.backend,
         ...techStack.frontend
     ],
     interests: [
-        'Open Source',
-        'Security',
-        'Privacy',
-        'Performance',
-        'Self-Hosting',
-        'Networking'
+        "Web Design",
+        "User Experience (UX)",
+        "Visual Communication",
+        "Interface Design",
+        "Interaction Design",
+        "Accessibility",
+        "Open Source",
+        "Performance",
+        "Digital Forensics",
+        "Penetration Testing",
+        "Security",
+        "Privacy",
+        "Networking"
+    ],
+    available in: [
+        'English/ASL',
+        'Spanish',
+        'Portuguese',
+        'Italian',
+        'Catalan',
+        'French',
+        'Norwegian'
     ]
 };
 
@@ -70,13 +72,9 @@ const me: Developer = {
 const contact = (type: ContactType): string => {
     switch (type) {
         case 'github':
-            return 'https://github.com/devidevio';
-        case 'twitter':
-            return 'https://x.com/devidev_io';
+            return 'https://github.com/mariomhz';
         case 'linkedIn':
-            return 'https://www.linkedin.com/in/dejan-vi';
-        case 'xing':
-            return 'https://www.xing.com/profile/Dejan_Vintonjiv';
+            return 'https://www.linkedin.com/in/josemariohernandez/';
         case 'email':
             return 'hi@devidev.io';
         default:
